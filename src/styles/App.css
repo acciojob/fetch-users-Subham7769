@@ -1,1 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display:flex;
+    justify-content:space-between;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
+}
+.nav button{
+    background-color: aqua;
+    border: none;
+    padding: 08.rem;
+    color:black;
+}
+
+table{
+    width: 100vw;
+    overflow-x: hidden;
+}
+thead{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+th,td{
+    margin: 0;
+    border: none;
+
+}
