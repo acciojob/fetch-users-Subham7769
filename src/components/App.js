@@ -39,7 +39,7 @@ const App = () => {
           </thead>
           <tbody>
             {
-            people.length ===0? 'No data Found':
+            people.length ===0? <tr><td><b>No data Found</b></td></tr>:
             people.map((person,index)=>{
               return (
                 <tr key={index}>
