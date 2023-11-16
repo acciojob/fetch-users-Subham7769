@@ -17,16 +17,16 @@ const App = () => {
 
   }
 
-  useEffect(()=>{
-    getUser();
-  }, []);
+  // useEffect(()=>{
+  //   getUser();
+  // }, []);
 
   return (
     <div>
         {/* Do not remove the main div */}
         <header className="nav">
         <h1>Blue Whales</h1>
-        <button onClick={getUser}>Get User List</button>
+        <button className="btn" onClick={getUser}>Get User List</button>
         </header>
         <table>
           <thead>
