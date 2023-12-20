@@ -13,7 +13,7 @@ const App = () => {
     const data = await axios.get('https://reqres.in/api/users');
     console.log(data.data.data);
     setPeople(data.data.data);
-    console.log(process.env.API);//important point to be noted how to get api from env File
+    // console.log(process.env.API);//important point to be noted how to get api from env File
 
   }
 
@@ -39,7 +39,7 @@ const App = () => {
           </thead>
           <tbody>
             {
-            people.length ===0? <tr><td><b>No data Found</b></td></tr>:
+            people.length ===0? <tr><td><b>No data found to display.</b></td></tr>:
             people.map((person,index)=>{
               return (
                 <tr key={index}>
